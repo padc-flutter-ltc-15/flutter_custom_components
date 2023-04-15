@@ -11,14 +11,15 @@ class CustomLayout extends StatelessWidget {
     return Stack(
       children: [
         FootballPitchBackgroundView(),
-        FormationView(),
+        //FormationView442(),
+        FormationView4231(),
       ],
     );
   }
 }
 
-class FormationView extends StatelessWidget {
-  const FormationView({Key? key}) : super(key: key);
+class FormationView442 extends StatelessWidget {
+  const FormationView442({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -62,6 +63,44 @@ class FormationView extends StatelessWidget {
   }
 }
 
+class FormationView4231 extends StatelessWidget {
+  const FormationView4231({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: Column(
+        children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height/10,
+          ),
+          PlayerView(),
+          GridView.count(
+            crossAxisCount: 3,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            children: List.generate(3, (index) => PlayerView()),
+          ),
+          GridView.count(
+            crossAxisCount: 2,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            children: List.generate(2, (index) => PlayerView()),
+          ),
+          GridView.count(
+            crossAxisCount: 4,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            children: List.generate(4, (index) => PlayerView()),
+          ),
+          PlayerView(
+            isGoalKeeper: true,
+          ),
+        ],
+      ),
+    );
+  }
+}
 
 class FootballPitchBackgroundView extends StatelessWidget {
   const FootballPitchBackgroundView({Key? key}) : super(key: key);
