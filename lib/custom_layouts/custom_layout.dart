@@ -12,7 +12,8 @@ class CustomLayout extends StatelessWidget {
       children: [
         FootballPitchBackgroundView(),
         //FormationView442(),
-        FormationView4231(),
+        //FormationView4231(),
+        FormationView343(),
       ],
     );
   }
@@ -92,6 +93,51 @@ class FormationView4231 extends StatelessWidget {
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
             children: List.generate(4, (index) => PlayerView()),
+          ),
+          PlayerView(
+            isGoalKeeper: true,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class FormationView343 extends StatelessWidget {
+  const FormationView343({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.only(top: MARGIN_LARGE_2X),
+      child: Column(
+        children: [
+          GridView.count(
+            crossAxisCount: 3,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            children: List.generate(3, (index) => PlayerView()),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height/50,
+          ),
+          GridView.count(
+            crossAxisCount: 4,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            children: List.generate(4, (index) => PlayerView()),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height/25,
+          ),
+          GridView.count(
+            crossAxisCount: 3,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            children: List.generate(3, (index) => PlayerView()),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height/25,
           ),
           PlayerView(
             isGoalKeeper: true,
