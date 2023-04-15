@@ -1,0 +1,25 @@
+
+import 'dart:ui';
+
+const PRIMARY_COLOR = Color.fromRGBO(22, 27, 36, 1.0);
+const SECONDARY_COLOR = Color.fromRGBO(117, 250, 123, 1.0);
+const CARROT_COLOR = Color.fromRGBO(239, 128, 49, 1.0);
+const PINK_COLOR = Color.fromRGBO(234, 56, 139, 1.0);
+const THIRD_COLOR = Color.fromRGBO(235, 68, 38, 1.0);
+const SECONDARY_COLOR_TRANSPARENT = Color.fromRGBO(117, 250, 123, 0.2);
+const HOME_SCREEN_BG_COLOR = Color.fromRGBO(21, 27, 35, 1.0);
+const TICKET_ITEM_BG_COLOR = Color.fromRGBO(23, 23, 23, 1.0);
+const AVAILABLE_STATE_BG_COLOR = Color.fromRGBO(34, 34, 34, 1.0);
+
+const SPLASH_SCREEN_BG_COLOR = Color.fromRGBO(19, 19, 19, 1.0);
+const PICK_REGION_SCREEN_BG_COLOR = Color.fromRGBO(19, 19, 19, 1.0);
+const PICK_REGION_SCREEN_BG_GRAY_COLOR = Color.fromRGBO(56, 56, 56, 1.0);
+
+const GREY_ICON_COLOR = Color.fromRGBO(154, 154, 154, 1.0);
+
+const PLAY_BUTTON_COLOR = Color.fromRGBO(233, 189, 68, 1.0);
+const HOME_SCREEN_LIST_TITLE_COLOR = Color.fromRGBO(70, 77, 91, 1.0);
+const HOME_SCREEN_BANNER_DOT_ACTIVE_COLOR = Color.fromRGBO(233, 189, 68, 1.0);
+const HOME_SCREEN_BANNER_DOT_INACTIVE_COLOR = Color.fromRGBO(255, 255, 255, 1.0);
+const DETAIL_SCREEN_CHIP_BG_COLOR = Color.fromRGBO(36, 42, 49, 1.0);
+const DETAIL_SCREEN_INFO_TEXT_COLOR = Color.fromRGBO(58, 62, 71, 1.0);
