@@ -1,21 +1,68 @@
 
+import 'dart:math';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_components/resources/dimens.dart';
 
-class CustomLayout extends StatelessWidget {
+import '../utils/constants.dart';
+
+class CustomLayout extends StatefulWidget {
+
   const CustomLayout({Key? key}) : super(key: key);
 
   @override
+  State<CustomLayout> createState() => _CustomLayoutState();
+}
+
+class _CustomLayoutState extends State<CustomLayout> {
+
+  Formation formation = Formation.FOUR_THREE_THREE;
+
+  @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        FootballPitchBackgroundView(),
-        //FormationView442(),
-        //FormationView4231(),
-        FormationView343(),
-      ],
+    return Scaffold(
+      body: Stack(
+        children: [
+          FootballPitchBackgroundView(),
+          FormationView(formation: this.formation)
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.refresh),
+        backgroundColor: Colors.amber,
+        onPressed: () {
+          setState(() {
+            formation = Formation.values[Random().nextInt(Formation.values.length)];
+          });
+        },
+      ),
     );
+  }
+}
+
+class FormationView extends StatelessWidget {
+
+  final Formation formation;
+
+  const FormationView({Key? key, required this.formation}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      child: _generateFormation(
+        formation
+      ),
+    );
+  }
+
+  Widget _generateFormation(Formation formation) {
+    switch(formation) {
+      case Formation.THREE_FOUR_THREE: return FormationView343();
+      case Formation.FOUR_FOUR_TWO: return FormationView442();
+      case Formation.FOUR_TWO_THREE_ONE: return FormationView4231();
+      case Formation.FOUR_THREE_THREE: return FormationView442();
+    }
   }
 }
 
@@ -42,6 +89,51 @@ class FormationView442 extends StatelessWidget {
             shrinkWrap: true,
             physics: NeverScrollableScrollPhysics(),
             children: List.generate(4, (index) => PlayerView()),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height/25,
+          ),
+          GridView.count(
+            crossAxisCount: 4,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            children: List.generate(4, (index) => PlayerView()),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height/25,
+          ),
+          PlayerView(
+            isGoalKeeper: true,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class FormationView433 extends StatelessWidget {
+  const FormationView433({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: EdgeInsets.only(top: MARGIN_LARGE_2X),
+      child: Column(
+        children: [
+          GridView.count(
+            crossAxisCount: 3,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            children: List.generate(3, (index) => PlayerView()),
+          ),
+          SizedBox(
+            height: MediaQuery.of(context).size.height/50,
+          ),
+          GridView.count(
+            crossAxisCount: 3,
+            shrinkWrap: true,
+            physics: NeverScrollableScrollPhysics(),
+            children: List.generate(3, (index) => PlayerView()),
           ),
           SizedBox(
             height: MediaQuery.of(context).size.height/25,
