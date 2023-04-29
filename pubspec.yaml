@@ -30,6 +30,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_fonts: ^4.0.3
+  dots_indicator: ^2.1.0
+  dotted_line: ^3.1.0
+  badges: ^3.1.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -60,6 +64,7 @@ flutter:
 
   assets:
     - assets/images/
+    - images/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

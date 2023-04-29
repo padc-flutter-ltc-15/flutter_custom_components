@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_components/custom_layouts/custom_layout.dart';
 import 'package:flutter_custom_components/custom_painter/custom_painter_demo.dart';
+import 'package:flutter_custom_components/screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: CustomLayout(),
+      home: HomePage(),
     );
   }
 }
