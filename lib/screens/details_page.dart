@@ -11,6 +11,8 @@ import 'package:flutter_custom_components/utils/images.dart';
 import 'package:flutter_custom_components/widgets/icon_view.dart';
 import 'package:flutter_custom_components/widgets/patients_profile_view.dart';
 
+import '../widgets/my_patients_list.dart';
+
 class DetailsPage extends StatefulWidget {
   const DetailsPage({Key? key}) : super(key: key);
 

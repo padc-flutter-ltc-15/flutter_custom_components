@@ -55,7 +55,12 @@ const TEXT_25X = 25.0;
 const TEXT_40X = 40.0;
 
 /// Sizes
+const SIZE_550X = 550.0;
+const SIZE_500X = 500.0;
+const SIZE_450X = 450.0;
+const SIZE_400X = 400.0;
 const SIZE_200X = 200.0;
+const SIZE_350X = 350.0;
 const SIZE_300X = 300.0;
 const SIZE_100X = 100.0;
 const SIZE_250X = 250.0;
@@ -83,4 +88,4 @@ const SIZE_16X = 16.0;
 
 /// Offsets
 const OFFSET_73 = 73.0;
-const OFFSET_117 = 117.0;
+const OFFSET_70 = 70.0;

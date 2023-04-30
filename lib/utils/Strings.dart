@@ -1,11 +1,11 @@
 /// Home Page
 const HOME_PAGE_MY_PATIENTS_TEXT = "My Patients";
-const HOME_PAGE_TOTAL_PATIENTS_TEXT = "12 total";
+const HOME_PAGE_TOTAL_PATIENTS_TEXT = "100 total";
 const HOME_PAGE_DATE_TEXT = "Today";
-const HOME_PAGE_LIST_VIEW_TITLE_TEXT = "Office No.248 / 3 Patients";
+const HOME_PAGE_LIST_VIEW_TITLE_TEXT = "Kamar-Taj / 1 Patients";
 const HOME_PAGE_TIME_TEXT = "Time";
 const HOME_PAGE_EVENTS_TEXT = "Events";
-const HOME_PAGE_PATIENT_NAME_TEXT = "Francisco Elliot";
+const HOME_PAGE_PATIENT_NAME_TEXT = "Julian Assange";
 const HOME_PAGE_SEARCH_FIELD_TEXT = "Search";
 
 /// Details Page
