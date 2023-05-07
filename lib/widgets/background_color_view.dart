@@ -12,8 +12,8 @@ class BackGroundColorView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Expanded(
-          flex: 4,
+        Expanded( /// Learning again and again
+          flex: 4, /// Learning again and again
           child: Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(

@@ -28,8 +28,8 @@ class DateTimeDottedLineAndEventsCardView extends StatelessWidget {
         const SizedBox(
           width: SIZE_20X,
         ),
-        (index == 0)? CompositedTransformTarget(
-          link: layerLink,
+        (index == 0)? CompositedTransformTarget( /// Learning again and again
+          link: layerLink, /// Learning again and again
           child: DottedLineAndCurrentTimeIndicator(
             index: index,
           ),

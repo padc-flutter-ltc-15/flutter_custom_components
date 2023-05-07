@@ -26,17 +26,17 @@ class _DetailsPageState extends State<DetailsPage> {
           children: [
             const DetailBackgroundColorView(),
             Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween, /// Learning again and again
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
                 AppBarView(),
-                ToDoListView(),
+                ToDoListView(), /// Learning again and again
               ],
             ),
             const Positioned(
               top: MARGIN_230X,
               left: MARGIN_50X,
-              child: CustomCirclePaint(),
+              child: CustomCirclePaint(), /// Learning again and again
             ),
             const Positioned(
               top: MARGIN_350X,

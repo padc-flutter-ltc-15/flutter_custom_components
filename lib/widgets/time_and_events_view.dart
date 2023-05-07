@@ -20,7 +20,7 @@ class TimeAndEventsView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: (index == 0) ? Colors.white.withOpacity(0.1) : Colors.black12,
+      color: (index == 0) ? Colors.white.withOpacity(0.1) : Colors.grey,
       child: DateTimeDottedLineAndEventsCardView(
           timeList: timeList,
           index: index,

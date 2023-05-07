@@ -23,7 +23,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final layerLink = LayerLink();
+  final layerLink = LayerLink(); /// Learning again and again
   final List<List<String>> timeList = [
     ["8:00", "8:30"],
     ["9:00", "9:30"],
@@ -79,7 +79,7 @@ class _HomePageState extends State<HomePage> {
                   TimeAndEventsTitleView(),
                   Stack(
                     children: [
-                      RefreshIndicator(
+                      RefreshIndicator( /// Learning again and again
                         onRefresh: () => _refresh(),
                         child: SizedBox(
                           height: SIZE_400X,
@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
                                   }
                                 },
                                 child: TimeAndEventsView(
-                                  layerLink: layerLink,
+                                  layerLink: layerLink, /// Learning again and again
                                   timeList: timeList,
                                   index: index,
                                 ),
@@ -106,10 +106,10 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ),
                       ),
-                      CompositedTransformFollower(
-                        link: layerLink,
+                      CompositedTransformFollower( /// Learning again and again
+                        link: layerLink, /// Learning again and again
                         showWhenUnlinked: false,
-                        targetAnchor: Alignment.bottomCenter,
+                        targetAnchor: Alignment.bottomCenter, /// Learning again and again
                         child: const CurrentTImeIndicator(),
                       ),
                     ],

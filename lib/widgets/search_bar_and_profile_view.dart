@@ -13,8 +13,8 @@ class SearchBarAndProfileView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: MARGIN_35X),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      child: Row( /// Learning again and again
+        mainAxisAlignment: MainAxisAlignment.spaceBetween, /// Learning again and again
         children: const [
           SearchFieldView(),
           ProfileImageView(),

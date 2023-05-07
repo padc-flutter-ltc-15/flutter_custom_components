@@ -17,11 +17,11 @@ class ToDoWorkTimeView extends StatelessWidget {
       children: [
         Text(DETAILS_PAGE_TIME,
           style: GoogleFonts.inter(
-              fontWeight: FontWeight.w500, color: Colors.white, fontSize: TEXT_40X),
+              fontWeight: FontWeight.w500, color: Colors.red, fontSize: TEXT_40X),
         ),
         Text(DETAILS_PAGE_TIME_PM,
           style: GoogleFonts.inter(
-              fontWeight: FontWeight.w400, color: Colors.white, fontSize: TEXT_25X),
+              fontWeight: FontWeight.w400, color: Colors.red, fontSize: TEXT_25X),
         ),
       ],
     );

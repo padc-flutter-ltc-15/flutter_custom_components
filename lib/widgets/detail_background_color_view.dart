@@ -9,10 +9,10 @@ class DetailBackgroundColorView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return Column( /// Learning again and again
       children: [
-        Expanded(
-          flex: 6,
+        Expanded( /// Learning again and again
+          flex: 6, /// Learning again and again
           child: Container(
             decoration: const BoxDecoration(
               gradient: LinearGradient(
@@ -26,14 +26,14 @@ class DetailBackgroundColorView extends StatelessWidget {
             ),
           ),
         ),
-        Expanded(
-          flex: 6,
+        Expanded( /// Learning again and again
+          flex: 6, /// Learning again and again
           child: Container(
             color: PRIMARY_COLOR,
           ),
         ),
-        Expanded(
-          flex: 1,
+        Expanded( /// Learning again and again
+          flex: 1, /// Learning again and again
           child: Container(
             color: TERTIARY_COLOR,
           ),

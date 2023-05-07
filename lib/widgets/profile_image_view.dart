@@ -29,10 +29,10 @@ class ProfileImageView extends StatelessWidget {
             color: Colors.white),
         child: Padding(
           padding: const EdgeInsets.all(MARGIN_3X),
-          child: Container(
+          child: Container( /// Learning again and again
             clipBehavior: Clip.antiAlias,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(MARGIN_20X),
+            decoration: BoxDecoration( /// Learning again and again
+              borderRadius: BorderRadius.circular(MARGIN_20X), /// Learning again and again
             ),
             child: Image.asset(
               PATIENT_ONE,

@@ -16,7 +16,7 @@ class DetailsPageClockIconView extends StatelessWidget {
       height: SIZE_50X,
       width: SIZE_50X,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.red,
         borderRadius: BorderRadius.circular(MARGIN_25X),
       ),
       child: Padding(

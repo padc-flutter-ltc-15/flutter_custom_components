@@ -18,9 +18,9 @@ class MyPatientsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: MARGIN_8X),
-      child: Card(
+      child: Card( /// Learning again and again
         clipBehavior: Clip.antiAlias,
-        shape: RoundedRectangleBorder(
+        shape: RoundedRectangleBorder( /// Learning again and again
           borderRadius: isDetails
               ? BorderRadius.circular(MARGIN_8X)
               : BorderRadius.circular(MARGIN_6X),
@@ -28,8 +28,9 @@ class MyPatientsList extends StatelessWidget {
         elevation: MARGIN_1X,
         child: Container(
           width: isDetails ? SIZE_280X : SIZE_200X,
-          decoration:
-          BoxDecoration(color: isDetails ? Colors.white : HOME_SCREEN_GRADIENT_COLOR_ONE),
+          decoration: BoxDecoration( /// Learning again and again
+            color: isDetails ? Colors.white : HOME_SCREEN_GRADIENT_COLOR_ONE,
+          ),
           child: Padding(
             padding: isDetails
                 ? const EdgeInsets.symmetric(horizontal: MARGIN_15X)

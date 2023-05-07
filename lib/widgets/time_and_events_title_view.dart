@@ -33,7 +33,7 @@ class TimeAndEventsTitleView extends StatelessWidget {
           ),
           const Padding(
             padding: EdgeInsets.only(top: MARGIN_10X),
-            child: DottedLine(
+            child: DottedLine( /// Learning again and again
               direction: Axis.vertical,
               dashColor: Colors.black38,
               dashLength: SIZE_5X,

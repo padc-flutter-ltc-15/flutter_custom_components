@@ -15,14 +15,14 @@ class CurrentTImeIndicator extends StatelessWidget {
       height: SIZE_15X,
       width: SIZE_15X,
       decoration: BoxDecoration(
-        color: Colors.black12,
+        color: Colors.yellow,
         borderRadius: BorderRadius.circular(MARGIN_7X),
       ),
       child: Padding(
         padding: const EdgeInsets.all(MARGIN_3X),
         child: Container(
           decoration: BoxDecoration(
-            color: PRIMARY_COLOR,
+            color: SECONDARY_COLOR,
             borderRadius: BorderRadius.circular(MARGIN_10X),
           ),
         ),
